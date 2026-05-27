@@ -8,7 +8,9 @@ const { generateHandoverDoc } = require("./src/docGenerator");
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-app.use(cors());
+app.use(cors({
+  origin: "grand-harmony-production-606e.up.railway.app"
+}));
 app.use(express.json({ limit: "10mb" }));
 
 // Java 코드 분석 API

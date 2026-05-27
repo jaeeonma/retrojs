@@ -55,7 +55,7 @@ const SAMPLE_CODE = `public class UserService {
       setAffected([]);
 
       try {
-        const response = await fetch("http://localhost/api/analyze", {
+        const response = await fetch("/api/analyze" , {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ code }),
@@ -81,7 +81,7 @@ const SAMPLE_CODE = `public class UserService {
       setAffected([]);
 
       try {
-        const response = await fetch("http://localhost/api/affected" , {
+        const response = await fetch("/api/affected" , {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({

@@ -9,7 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 app.use(cors({
-  origin: "grand-harmony-production-606e.up.railway.app"
+  origin: "https://grand-harmony-production-606e.up.railway.app"
 }));
 app.use(express.json({ limit: "10mb" }));
 
